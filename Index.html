@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="showAlert()">
+    <div class="rain-container"></div>
+    <div class="container">
+        <div class="kiri">
+            <h1 class="judul-utama">🌺 Moana🌺</h1>
+            <div class="judul-box" onclick="judulVideo()">Watch Moana's Journey</div>
+            <div class="border-container">
+                <video controls poster="assets/Moana.png">
+                    <source src="assets/Video Moana.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="kanan">
+            <div class="judul-box" onclick="judulLagu()">Dwayne Johnson - You're Welcome </div>
+            <div class="audio-player">
+                <audio controls autoplay>
+                    <source src="assets/Audio Moana.MP3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="judul-box" onclick="judulFoto()">Captured Memories</div>
+            <div class="photo-container">
+                <div class="border-container">
+                    <img src="assets/Moana1.jpg" alt="Moana">
+                </div>
+                <div class="border-container">
+                    <img src="assets/Moana2.jpg" alt="Moana">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
